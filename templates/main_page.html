@@ -26,16 +26,11 @@
 
         <div class="container">
 
-        <div class="row">
-            This is the first dummy comment.
-        </div>
-
-        <div class="row">
-            This is the second dummy comment.  It's actually no more interesting that the first.
-        </div>
-        <div class="row">
-            And here is the third
-        </div>
+            {% for comment in comments %}
+                <div class="row">
+                    {{ comment }}
+                </div>
+            {% endfor %}
 
         <div class="row">
             <form action="." method="POST">
